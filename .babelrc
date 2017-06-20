@@ -1,0 +1,7 @@
+{
+  compact: true,
+  plugins: [
+    ['transform-react-jsx', {pragma: 'h'}]
+  ],
+  presets: ['stage-0'],
+}

@@ -1,0 +1,22 @@
+{
+  'env': {
+    'browser': true,
+  },
+  'extends': ['eslint:recommended', 'google', 'plugin:react/recommended'],
+  'parserOptions': {
+    'ecmaFeatures': {
+      'experimentalObjectRestSpread': true,
+      'jsx': true,
+      'modules': true,
+    }
+  },
+  'rules': {
+    'react/no-unknown-property': [2, {'ignore' : ['class']}],
+    'react/prop-types': 0,
+  },
+  'settings': {
+    'react': {
+      'pragma': 'h',
+    }
+  }
+}
