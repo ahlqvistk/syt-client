@@ -4,7 +4,8 @@
   "description": "Client for Synced YouTube Project",
   "main": "index.js",
   "scripts": {
-    "build": "rm ./build/* && webpack -p",
+    "build": "npm run clean && webpack -p",
+    "clean": "rimraf build/* && rimraf node_modules/preact-redux/.babelrc",
     "start": "webpack-dev-server --inline",
     "test": "jest --watch"
   },
@@ -30,6 +31,7 @@
     "html-webpack-plugin": "^2.28.0",
     "jest": "^20.0.4",
     "node-sass": "^4.5.3",
+    "rimraf": "^2.6.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0",
