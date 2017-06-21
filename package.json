@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && webpack -p",
     "clean": "rimraf build/* && rimraf node_modules/preact-redux/.babelrc",
-    "start": "webpack-dev-server --inline",
+    "start": "rimraf node_modules/preact-redux/.babelrc && webpack-dev-server --inline",
     "test": "jest --watch"
   },
   "author": "ahlqvistk",
